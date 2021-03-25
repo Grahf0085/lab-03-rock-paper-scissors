@@ -105,3 +105,8 @@ footer {
     }
 
   }
+
+  .tally {
+      display: flex;
+      flex-direction: row;
+  }
