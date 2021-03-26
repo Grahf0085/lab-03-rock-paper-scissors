@@ -10,11 +10,13 @@ const winsDisplay = document.getElementById('wins-display');
 const tiesDisplay = document.getElementById('ties-display');
 const lossesDisplay = document.getElementById('losses-display');
 const totalDisplay = document.getElementById('total-display');
+const resetDisplay = document.getElementById('reset-number');
 
 let wins = 0;
 let losses = 0;
 let ties = 0;
 let total = 0;
+let resetCount = 0;
 
 button.addEventListener('click', () => {
     const usersPick = document.querySelector('input:checked');
@@ -49,9 +51,11 @@ resetButton.addEventListener('click', () => {
     losses = 0;
     ties = 0;
     total = 0;
+    resetCount++;
 
     winsDisplay.textContent = wins;
     lossesDisplay.textContent = losses;
     tiesDisplay.textContent = ties;
     totalDisplay.textContent = total;
+    resetDisplay.textContent = resetCount;
 });
