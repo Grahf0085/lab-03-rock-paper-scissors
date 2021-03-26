@@ -1,11 +1,16 @@
 
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 body {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
+    --beige: hsla(88, 57%, 91%, 1);
+    --tea-green: hsla(87, 40%, 80%, 1);
+    --laurel-green: hsla(86, 30%, 70%, 1);
+    --asparagus: hsla(84, 21%, 57%, 1);
+    --moss-green: hsla(82, 18%, 51%, 1);
+    --fern-green: hsla(83, 21%, 42%, 1);
 
     /* --color1: hsla(45, 86%, 83%, 1);
     --color2: hsla(135, 65%, 98%, 1);
@@ -18,8 +23,7 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: var(--tea-green);
 }
 
 main {
@@ -31,7 +35,7 @@ main {
 }
 
 section {
-    background-color: var(--color5);
+    background-color: var(--fern-green);
     width: 1000px;
     max-width: 80%;
     display: flex;
@@ -42,21 +46,22 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    border: solid 2px var(--beige);
 }
 
 header {
     display: flex;
     justify-content: center;
-    background-color: var(--color3);
-    height: var(--header-height);
+    align-content: center;
+    background-color: var(--laurel-green);
+    height: 125px;
     box-shadow: var(--shadow);
 }
 
 footer {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: var(--laurel-green);
     box-shadow: var(--shadow);
 }
 
@@ -83,7 +88,7 @@ footer {
     height: var(--footer-height);
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: var(--laurel-green);
     box-shadow: var(--shadow);
 }
   
@@ -106,7 +111,44 @@ footer {
 
   }
 
-  .tally {
-      display: flex;
-      flex-direction: row;
-  }
+.tally, .results {
+    display: flex;
+    flex-direction: row;
+}
+
+hgroup {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    align-self: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+ol {
+    list-style: disc;
+}
+
+.pick-weapon {
+    display: flex;
+    flex-direction: row;
+}
+
+h3 {
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+input {
+    display: none;
+}
+
+img  {
+    margin: 25px;
+}

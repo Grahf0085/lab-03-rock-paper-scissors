@@ -13,47 +13,60 @@
 </head>
 
 <body>
+
     <header>
         <hgroup>
             <h1>R-P-S</h1>
             <h2>A 0 sum game</h2>
         </hgroup>
     </header>
-    <main>
-        <p>Choose your weapon. At the same time the AI will draw theirs.</p>
 
+    <main>
+
+        <h3>Rules</h3>
         <ol>
             <li>Rock > Scissors</li>
             <li>Scissors > Paper</li>
             <li>Paper > Rock</li>
         </ol>
 
-        <label>
-            Rock
-            <input type="radio" name="RPS" value="rock" />
-        </label>
-        <label>
-            Paper
-            <input type="radio" name="RPS" value="paper" />
-        </label>
-        <label>
-            Scissors
-            <input type="radio" name="RPS" value="scissors" />
-        </label>
+        <p>Choose your weapon. The AI is waiting.</p>
+
+        <section class="pick-weapon">
+            <label>
+
+                <input type="radio" name="RPS" value="rock" />
+                <img src="assets/rock.png">
+            </label>
+            <label>
+
+                <input type="radio" name="RPS" value="paper" />
+                <img src="assets/paper.png">
+            </label>
+            <label>
+
+                <input type="radio" name="RPS" value="scissors" />
+                <img src="assets/scissors.png">
+            </label>
+        </section>
 
         <button id="button">Play</button>
 
-        <section>
+        <section class="results">
             <p>User Picked: <span id="player-pick-display"></span></p>
             <p>AI Picked: <span id="AI-pick-display"></span></p>
-            <p>Winner: <span id="result-display"></span></p>
+            <p>Result: <span id="result-display"></span></p>
         </section>
 
         <section class="tally">
-            <p>Wins: <span id="wins-display"> </p>
-            <p>Ties: <span id="ties-display"> </p>
-            <p>Losses: <span id="losses-display"> </p>
+            <p>Wins: <span id="wins-display"></span></p>
+            <p>Ties: <span id="ties-display"></span></p>
+            <p>Losses: <span id="losses-display"></span></p>
+            <p>Total: <span id="total-display"></span></p>
         </section>
+
+        <button id="reset">Reset</button>
+
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
